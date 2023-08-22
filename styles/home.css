@@ -1,0 +1,164 @@
+.fixedBanner{
+	width: 100%;
+	height: 36px;
+	position: fixed;
+	padding: 5px 0;
+	z-index: 10;
+	background: var(--light);
+	top: 0;
+	left: 0;
+}
+.fixedBanner__title{
+	font-family: 'Playfair Display', sans-serif;
+	position: relative;
+	text-align: center;
+	left: 0;
+	top: 0;
+	margin: 0;
+	line-height: 30px;
+	border-bottom: 1px solid var(--background);
+}
+.header{
+	margin-top: 50px;
+	display: flex;
+	justify-content: space-around;
+	border-bottom: 1px solid var(--background);
+	padding-bottom: 20px;
+}
+.header__img{
+	object-fit: contain;
+	display: block;
+	width: 64px;
+	border-radius: 50%;
+	border: 2px solid var(--primary);
+	padding: 5px;
+}
+.header__minBox{
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-content: center;
+	row-gap: 7px;
+}
+.header__title{
+	font-size: 14px;
+}
+.header__buttons{
+	display: flex;
+	justify-content: center;
+	gap: 0 10px;
+}
+.button{
+	display: flex;
+	justify-content: center;
+	gap: 5px;
+	background: blue;
+	padding: 7px;
+	border-radius: 5px;
+}
+.button p,
+.button i{
+	font-size: 15px;
+	color: var(--light);
+}
+.button--whatsapp{
+	background: #28a745;
+}
+.button--telegram{
+	background: #037bf2;
+}
+
+
+/*tagsBox*/
+.tagsBox{
+	display: flex;
+	justify-content: space-around;	
+	padding: 8px 0;
+}
+.tagItem__img{
+	object-fit: contain;
+	display: block;
+	width: 42px;
+	padding: 5px;
+	border-radius: 5px;
+}
+.tagItem__img--checked{
+	background: var(--background);
+}
+
+
+/*productsBox*/
+.productsBox{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 5px;
+	justify-content: center;
+	position: relative;
+}
+.productBox{
+	cursor: pointer;
+}
+.product__img{
+	object-fit: cover;
+	display: block;
+	width: 115px;
+	height: 115px;
+}
+.product__img--big{
+	width: 96%;
+	height: 70vh;
+	margin: 0 auto;
+	border-radius: 0 0 2px 2px;
+}
+
+.productBox--screen{
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0, 0, 0, .5);
+	left: 0;
+	top: 35px;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	animation: moverAbajo .5s;
+}
+
+.xMark{
+	position: fixed;
+	right: 15px;
+	top: 10px;
+	cursor: pointer;
+	z-index: 12;
+}
+.xMark--hidden{
+	display: none;
+	visibility: hidden;
+}
+
+.productInfo{
+	width: 96%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	column-gap: 5px;
+	background: var(--light);
+	padding: 5px;
+	border-radius: 5px 5px 0 0;
+	position: relative;
+}
+.product__title{
+	margin-left: 70px;
+}
+.product__price{
+	background: var(--success);
+	padding: 12px;
+	border-radius: 2px 0 2px 0;
+	font-weight: 700;
+	color: var(--light);
+	position: absolute;
+	left: 0;
+	top: 0;
+	font-size: 20px;
+	z-index: 10;
+}

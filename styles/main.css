@@ -1,0 +1,124 @@
+/*Estilos para todos los elementos*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a{text-decoration: none;}
+li{list-style: none;}
+/*Fin de los estilos que aplican para todos los elementos*/
+
+
+/*Custom Propities*/
+:root{
+  /*Colores de Google*/
+  --danger:#d93e4c;
+  --success:#28a745;
+  --light:#fff;
+
+  --text:#2d3436;
+  --title: #2e3440;
+  --littleDark: #95a5c1;
+  --background: #e5e9f0;
+  --gold:#ffe132;
+  
+  --primary:#ffbe5f;
+  --secondary: #007d88;
+  --tertiary:#037bf2;
+}
+/*FIN de las Customs Propities*/
+
+
+/*Estilos para los elementos principales*/
+html {
+  scroll-behavior: smooth;
+}
+body{
+  background: var(--light);
+  min-height: 100vh;
+}
+h1, h2, h3, h4, h5, h6 th, tr{
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-display: fallback;
+  font-weight: 700;
+  color: var(--title);
+  font-size: 25px;
+}
+h1{
+  font-size: 30px;
+}
+p, li, a, input, select, button, label,td, textarea, span, small, tr{
+  font-family: 'Roboto', sans-serif;
+  font-display: fallback;
+  color:var(--text);
+  font-weight: 500;
+  font-size: 16px;
+}
+/*Fin de los estilos principales*/
+
+
+/*Media queries - Globales*/
+@media (max-width: 500px){
+  h1{
+    font-size: 20px;
+  }
+  h1, h2, h3, h4, h5, h6, th{
+    font-size: 18px;
+  }
+  p, li, a, input, select, button, label,td, textarea, span, small{
+    font-size: 14px;
+  }
+}
+
+
+
+
+/*KEYFRAMES*/
+@keyframes moverIzquierda{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moverDerecha{
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moverArriba{
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moverAbajo{
+    0%{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+/*FIN DE LOS KEYFRAMES*/
