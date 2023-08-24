@@ -67,9 +67,9 @@
 
 	<!--Tags - Etiquetas-->
 	<div class="tagsBox">
-		<div class="tagItem tagItem--All">
+		<div class="tagItem tagItem__img--checked tagItem--All">
 			<img src="img/tags/All.png" alt="Etiqueta de la página" 
-						class="tagItem__img tagItem__img--checked">
+						class="tagItem__img">
 		</div>
 		<?php
 			foreach ($tags as $key => $value) {
@@ -90,7 +90,7 @@
 		<?php 
 			foreach ($tags as $key => $value) {
 				foreach ($products[$value] as $minKey => $minValue) {
-						echo '<div class="productBox">';
+						echo '<div class="productBox productBox--' . $value . '">';
 							echo '<div class="productInfo hidden">';
 							echo '<span class="product__price">25$</span>';
 							echo '<h3 class="product__title">' . $value . " - " . $minValue . ' </h3>';
@@ -104,6 +104,7 @@
 	</div>
 
 	<!--Scripts-->
-    <script src="js/productScreen.js"></script>
+    <script type="module" src="js/productScreen.js"></script>
+    <script type="module" src="js/filterTags.js"></script>
 </body>
 </html>

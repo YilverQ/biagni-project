@@ -91,7 +91,7 @@
 .productsBox{
 	display: flex;
 	flex-wrap: wrap;
-	gap: 5px;
+	gap: 2px;
 	justify-content: center;
 	position: relative;
 }
@@ -101,12 +101,14 @@
 .product__img{
 	object-fit: cover;
 	display: block;
-	width: 115px;
-	height: 115px;
+	width: 105px;
+	height: 105px;
 }
 .product__img--big{
-	width: 96%;
+	width: 98%;
 	height: 70vh;
+	object-fit: contain;
+	object-position: top;
 	margin: 0 auto;
 	border-radius: 0 0 2px 2px;
 }
@@ -114,14 +116,13 @@
 .productBox--screen{
 	position: fixed;
 	width: 100vw;
-	height: 100vh;
+	height: calc(100vh - 35px);
 	background: rgba(0, 0, 0, .5);
 	left: 0;
 	top: 35px;
 	display: flex;
 	flex-flow: column;
-	justify-content: center;
-	animation: moverAbajo .5s;
+	transition: all .5s;
 }
 
 .xMark{
@@ -137,7 +138,7 @@
 }
 
 .productInfo{
-	width: 96%;
+	width: 98%;
 	margin: 0 auto;
 	display: flex;
 	justify-content: center;
@@ -146,9 +147,10 @@
 	padding: 5px;
 	border-radius: 5px 5px 0 0;
 	position: relative;
+	margin-top: 40px;
 }
 .product__title{
-	margin-left: 70px;
+	margin-left: 60px;
 }
 .product__price{
 	background: var(--success);

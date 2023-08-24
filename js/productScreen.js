@@ -9,7 +9,6 @@ products.forEach( (item) =>{
 		childrenProductBox = item.children;
 		childrenProductBox[0].classList.remove("hidden");
 		childrenProductBox[1].classList.add("product__img--big");
-		console.log(childrenProductBox[1]);
 	});
 });
 
