@@ -1,0 +1,70 @@
+{
+	"tag" : [
+		{
+			"id"   : 1,
+			"name" : "Anillos"
+		},
+		{
+			"id"   : 2,
+			"name" : "Collar"
+		},
+		{
+			"id"   : 3,
+			"name" : "Pulsera"
+		}
+	],
+	"Product" : [
+		{
+			"id" : 1,
+			"name" : "Goku Y Milk",
+			"Price": 10
+		},
+		{
+			"id" : 2,
+			"name" : "Hotel Transylvania",
+			"Price": 10
+		},
+		{
+			"id" : 3,
+			"name" : "Las Chicas Super Poderosas",
+			"Price": 15
+		},
+		{
+			"id" : 4,
+			"name" : "Dark",
+			"Price": 15
+		},
+		{
+			"id" : 5,
+			"name" : "Dr Strange",
+			"Price": 25
+		},
+	],
+	"Product_Tag" : [
+		{
+			"id" : 1,
+			"tag_id" : 1,
+			"product_id" : 1
+		},
+		{
+			"id" : 2,
+			"tag_id" : 1,
+			"product_id" : 2
+		},
+		{
+			"id" : 3,
+			"tag_id" : 1,
+			"product_id" : 3
+		},
+		{
+			"id" : 4,
+			"tag_id" : 2,
+			"product_id" : 4
+		},
+		{
+			"id" : 5,
+			"tag_id" : 3,
+			"product_id" : 5
+		}
+	]
+}

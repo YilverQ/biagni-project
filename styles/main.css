@@ -22,7 +22,7 @@ li{list-style: none;}
   --background: #e5e9f0;
   --gold:#ffe132;
   
-  --primary:#ffbe5f;
+  --primary:#9589e8;
   --secondary: #007d88;
   --tertiary:#037bf2;
 }
@@ -47,7 +47,7 @@ h1, h2, h3, h4, h5, h6 th, tr{
 h1{
   font-size: 30px;
 }
-p, li, a, input, select, button, label,td, textarea, span, small, tr{
+p, li, a, input, select, button, label,td, textarea, span, small, tr, b{
   font-family: 'Roboto', sans-serif;
   font-display: fallback;
   color:var(--text);
