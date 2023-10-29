@@ -29,7 +29,7 @@
 	<a href="./index.html">
 		<div class="fixedBanner">
 			<h1 class="fixedBanner__title">
-				&#x1f3ae; Zona Gamer 
+				 
 			</h1>
 		</div>
 	</a>
@@ -38,6 +38,8 @@
 	<!--Banner fijo-->
 	<header class="header">
 		<img src="img/logo.png" alt="logo de la página" class="header__img">
+		
+		<!--Boton de busqueda-->
 		<div class="search">
 			<form>
 				<label for="search" class="searchText">Buscar producto: </label>
@@ -49,16 +51,17 @@
 				</div>
 			</form>
 		</div>
+		
 		<div class="header__minBox">
 			<h2 class="header__title">Accesorios | Consolas | Videojuegos</h2>
 			<div class="header__buttons">
-				<a href="#" target="_blank">
+				<a href="#" target="_blank" id="whatsappLink">
 					<div class="button button--whatsapp">
 						<i class="fa-brands fa-whatsapp"></i>
 						<p>Whatsapp</p>
 					</div>
 				</a>
-				<a href="#" target="_blank">
+				<a href="#" target="_blank" id="telegramLink">
 					<div class="button button--telegram">
 						<i class="fa-brands fa-telegram"></i>
 						<p>Telegram</p>
@@ -87,49 +90,22 @@
 		</div>
 	</section>
 
-
 	<!--Productos-->
-	<article class="boxProducts" id="app" v-for="product in products">
+	<article class="boxProducts">
 
-		<div class="product">
-			<div class="xmark">
-				<i class="fa-brands fa-twitch"></i>
-			</div>
-			<img src="img/products/god.webp" alt="Imagen de un producto" class="product__img">
-			<h2 class="product__title">God of War Ragnarok</h2>
-			<b class="product__price">53$</b>
-		</div>
-
-		<div class="product">
-			<div class="xmark">
-				<i class="fa-brands fa-twitch"></i>
-			</div>
-			<img src="img/products/call.jpg" alt="Imagen de un producto" class="product__img">
-			<h2 class="product__title">Call of Duty MWII</h2>
-			<b class="product__price">30$</b>
-		</div>
-
-		<div class="product">
-			<div class="xmark">
-				<i class="fa-brands fa-twitch"></i>
-			</div>
-			<img src="img/products/fornite.jpg" alt="Imagen de un producto" class="product__img">
-			<h2 class="product__title">Fornite</h2>
-			<b class="product__price">20$</b>
-		</div>
-
-		<div class="product">
-			<div class="xmark">
-				<i class="fa-brands fa-twitch"></i>
-			</div>
-			<img src="img/products/fornite.jpg" alt="Imagen de un producto" class="product__img">
-			<h2 class="product__title">{{ message }}</h2>
-			<b class="product__price">20$</b>
-		</div>
 	</article>
 	
-
+	<section class="boxButtonFinal">
+		<span class="buttonFinal">Comprar</span>
+	</section>
 
 	<!--Scripts-->
+	<script src="./js/config.js" type="module"></script>
+	<script src="./js/changeConfig.js" type="module"></script>
+	<script src="./js/data.js" type="module"></script>
+	<script src="./js/insertProducts.js" type="module"></script>
+	<script src="./js/dobleClickHeart.js" type="module"></script>
+	<script src="./js/clickShoppingCart.js" type="module"></script>
+	<script src="./js/clickTags.js" type="module"></script>
 </body>
 </html>
